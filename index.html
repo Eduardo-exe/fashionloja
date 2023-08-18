@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion Moda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="logo/logotipo.jpg">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar logotipo -->
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo/logotipo.jpg" alt="logo" style="width: 70px;">
+        </a>
+        <!-- Navbar navegação -->
+        <ul class="nav me-auto mb-2 mb-lg-0 container nav-justified">
+          <li class="nav-item">
+            <a class="nav-link " style="color: white;" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" href="#" role="button" style="color: white;"
+              aria-expanded="false">Categorias</a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="#">Acessórios</a></li>
+              <li><a class="dropdown-item" href="#">Calçados</a></li>
+              <li><a class="dropdown-item" href="#">Roupas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#">Cadastro</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bloco">
+          <img src="carrossel/roupa 1.jpg" class="d-block w-100 h-custom" alt="roupa1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Elegância encontra inovação: sua loja de moda única.</h5>
+          </div>
+        </div>
+        <div class="carousel-item bloco">
+          <img src="carrossel/roupa 2.jpg" class="d-block w-100" alt="roupa2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seja a tendência. Vista a moda.</h5>
+          
+          </div>
+        </div>
+        <div class="carousel-item bloco">
+          <img src="carrossel/calçado 1.jpg" class="d-block w-100" alt="calçado1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Do casual ao extraordinário, temos o seu visual perfeito</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item bloco">
+          <img src="carrossel/calçado 2.jpg" class="d-block w-100" alt="calçado2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Crie momentos inesquecíveis com roupas inigualáveis</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item bloco">
+          <img src="carrossel/acessorio 1.jpg" class="d-block w-100" alt="acessorio1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Capturando a essência da moda em cada peça</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item bloco">
+          <img src="carrossel/acessorio 2.jpg" class="d-block w-100" alt="acessorio2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Revele sua autenticidade através da moda</h5>
+           
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="main">
+      <h1>Promoções</h1>
+    </section>
+    <main class="container-fluid">
+      <section class="container mt-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/jordan1.webp" class="card-img-top" alt="..." >
+              <div class="card-body ">
+                <h5 class="card-title">Jordan 1 Retro High Lucky</h5>
+                <p class="card-text">Preço: <s>R$ 1.700</s></p>
+                <p class="card-text">Por: R$ 1.500</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal">
+                  info
+                </button>
+              </div>
+            </div>
+            <div id="janelamodal" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Jordan 1 Retro High Lucky Green</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Os tênis Jordan são fabricados com uma variedade de materiais, incluindo
+                      couro, camurça, malha e materiais sintéticos. A escolha do material pode
+                      variar de um modelo para outro e ao longo das diferentes edições
+                      lançadas. O couro é frequentemente usado na parte superior dos tênis
+                      Jordan, proporcionando durabilidade e um visual premium. Já a camurça e
+                      a malha podem ser empregadas para oferecer diferentes texturas e
+                      detalhes visuais. Os materiais sintéticos também são utilizados para
+                      proporcionar suporte e leveza aos tênis. Cada edição de tênis Jordan
+                      pode apresentar uma combinação única de materiais, visando conforto,
+                      desempenho esportivo e estilo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/salto.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Salto Alto Verde de Couro</h5>
+                <p class="card-text">Preço: <s>R$ 1.000</s></p>
+                <p class="card-text">Por: R$ 800</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal2">
+                  info
+                </button>
+                
+              </div>
+            </div>
+            <div id="janelamodal2" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Salto Alto Verde de Couro</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>O material de um salto alto de couro é notavelmente distintivo e oferece
+                      uma combinação de elegância, durabilidade e sofisticação. O couro é
+                      extraído da pele de animais, como bois, cabras ou cordeiros, e passa por
+                      um processo de tratamento para ser transformado em um material versátil
+                      e de alta qualidade. Aqui estão algumas características que definem o
+                      material de um salto alto de couro.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/camisa feminina.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Camisa Listrada Feminina</h5>
+                <p class="card-text">Preço: <s>R$ 200</s></p>
+                <p class="card-text">Por: R$ 180</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal3">
+                  info
+                </button>
+                
+              </div>
+            </div>
+            <div id="janelamodal3" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Camisa Listrada Feminina</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Camisa listrada é confeccionada com o mais fino algodão, conhecido por sua maciez, durabilidade
+                      e excelente capacidade de absorção. O tecido proporciona uma sensação suave contra a pele,
+                      garantindo um conforto excepcional durante todo o dia. Além disso, o algodão respirável permite
+                      a circulação de ar, mantendo você fresco e confiante, não importa a ocasião.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/acessorios masculino.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kit de Acessórios Masculino</h5>
+                <p class="card-text">Preço: <s>R$ 100</s></p>
+                <p class="card-text">Por: R$ 80</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal4">
+                  info
+                </button>
+              </div>
+            </div>
+            <div id="janelamodal4" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Kit de Acessórios Masculino</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Apresentamos o nosso conjunto de acessórios masculinos "Urban Style", perfeito para homens
+                      modernos que desejam expressar sua personalidade única e adicionar um toque de moda aos seus
+                      looks diários. Este conjunto inclui uma seleção versátil de anéis, cordões e pulseiras
+                      cuidadosamente projetados para complementar uma variedade de estilos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/acessorios feminnio.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kit de Acessórios Feminino</h5>
+                <p class="card-text">Preço: <s>R$ 100</s></p>
+                <p class="card-text">Por: R$ 80</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal5">
+                  info
+                </button>
+                
+              </div>
+            </div>
+            <div id="janelamodal5" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Kit de Acessorios Feminino</h5>
+                  
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Apresentamos o nosso deslumbrante conjunto de acessórios femininos "Elegância Radiante",
+                      perfeito para mulheres que desejam adicionar um toque de sofisticação e brilho aos seus looks.
+                      Este conjunto oferece uma variedade de acessórios cuidadosamente selecionados, incluindo anéis,
+                      colares e pulseiras, que capturam a essência da elegância feminina.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="cards/camisa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Camisa de Algodão Masculina</h5>
+                <p class="card-text">Preço: <s>R$ 250</s></p>
+                <p class="card-text">Por: R$ 210</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal6">
+                  info
+                </button>
+                
+              </div>
+            </div>
+            <div id="janelamodal6" class="modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title">Camisa de Algodão Masculina</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      A nossa Camisa Masculina de Algodão é uma peça essencial que combina estilo e conforto em uma
+                      única peça. Feita com algodão de alta qualidade, esta camisa é perfeita para homens que
+                      valorizam o visual elegante e a sensação suave contra a pele.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Depoimentos-->
+    <section class="main">
+      <h2>Depoimentos</h2>
+    </section>
+    <section class="container">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="comentarios/Mc pipokinha.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mc Pipokinha</h5>
+              <p class="card-text">O site é otimo agora eu posso humilhar professores com estilo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="comentarios/Mc kevin.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mc kevin</h5>
+              <p class="card-text">Gostei muito as roupas cairam super bem em mim</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="comentarios/naldo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Naldo</h5>
+              <p class="card-text">Vodka agua de coco</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="comentarios/blue pen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blue pen</h5>
+              <p class="card-text">Recomendo muito minha gente, esse site é bom demaize.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+    
+    <footer class="container-footer bg-black text-white py-3" style="margin-top: 5%;">
+      <section class="row">
+
+        <div class="col-md-9">
+          <p>&copy;2023 Fashion Moda | <a href="#" class="text-decoration-none">Privacidade</a> | <a href="#"
+              class="text-decoration-none">Políticas</a></p>
+        </div>
+
+        <div class="col-md-3">
+          <!-- Ícones redes sociais -->
+          <div class="fs-5 d-flex justify-content-evenly social">
+            <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+      </section>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
