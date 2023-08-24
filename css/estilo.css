@@ -7,6 +7,8 @@
     box-sizing: border-box;
     outline: none;
 }
+
+
 .bloco{
     background-color: #ccc;
     height: 50vh;
@@ -21,11 +23,23 @@
     height: 100%;
 }
 
+
 .dropdown-menu {
+    background: #000000;
     left: 50% !important;
     transform: translateX(-50%);
-   
-    transition: none !important;
+    padding:30px 0px 20px 0px;
+}
+
+#dropdown-menu1{
+    margin-top: 2px;
+}
+.dropdown-item {
+    background-color: rgb(0, 0, 0) !important; /* Altere "blue" para a cor desejada */
+    color: rgb(255, 255, 255) !important; /* Altere "white" para a cor desejada para o texto */
+}
+.dropdown-item:active{
+    color: #ffffff;
 }
 .main{
     text-align: center;
@@ -41,12 +55,39 @@
     object-fit: cover; /* Controla o dimensionamento da imagem */
     height: 200px; /* Defina a altura desejada para as imagens */
 }
-.card:hover {
+.card:hover{
     transform: scale3d(1.1, 1.1, 1);
   }
-  .card {
-    
-    background-color: #fff;
+.card{
+    background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     transition: 0.3s;
   }
+  .custom-font-size {
+    font-size: 16px; /* Defina o tamanho de fonte desejado */
+  }
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px 1px 0px;
+    position: relative;
+}
+.nav-item::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+.nav-item:hover::after{
+    width: 100%;
+}   
+
+.no-outline {
+    outline: none !important;
+    box-shadow: none !important; /* Adicione esta linha se houver sombra (box-shadow) */
+}

@@ -1,0 +1,42 @@
+/* Estilos CSS para os produtos */
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 300px; /* Defina o tamanho desejado para os cards */
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden; /* Evita que conteúdo maior que o card transborde */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 200px; /* Altura fixa para as imagens (ajuste conforme necessário) */
+    object-fit: cover; /* Redimensiona as imagens mantendo a proporção e preenchendo o espaço */
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-text {
+    margin-top: 10px;
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Limpar margens adicionais em elementos de lista */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .main{
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;}  

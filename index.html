@@ -3,43 +3,69 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Moda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="logo/logotipo.jpg">
+  <link rel="shortcut icon" href="logo/Captura de tela 2023-08-21 231229.png">
   <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    body {
+        background-image: url('imagens/2048\ x\ 1152\ Wallpaper\ Creator\ -\ WallpaperSafari.jpeg'); /* Substitua 'caminho-para-sua-imagem.jpg' pelo caminho real da sua imagem */
+        background-size: cover; /* Para garantir que a imagem cubra todo o corpo */
+        background-repeat: no-repeat; /* Para evitar repetições da imagem */
+    }
+</style>
 </head>
 
 <body>
   <header>
     <!-- Navbar logotipo -->
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-sm bg-black sticky-top " data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="logo/logotipo.jpg" alt="logo" style="width: 70px;">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="logo/Captura de tela 2023-08-21 231229.png" alt="logo" style=" width: 70px;">
         </a>
-        <!-- Navbar navegação -->
-        <ul class="nav me-auto mb-2 mb-lg-0 container nav-justified">
-          <li class="nav-item">
-            <a class="nav-link " style="color: white;" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" href="#" role="button" style="color: white;"
-              aria-expanded="false">Categorias</a>
-            <ul class="dropdown-menu text-center">
-              <li><a class="dropdown-item" href="#">Acessórios</a></li>
-              <li><a class="dropdown-item" href="#">Calçados</a></li>
-              <li><a class="dropdown-item" href="#">Roupas</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#">Cadastro</a>
-          </li>
-        </ul>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav me-auto mb-2 mb-lg-1 container justify-content-evenly">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html" style="color: white;">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle no-outline" id="categoriasDropdown" data-bs-toggle="dropdown" href="#"
+                style="color: white;" aria-expanded="false">Categorias</a>
+              <ul class="dropdown-menu text-center" id="dropdown-menu1">
+                <li><a class="dropdown-item" href="api/acessorios.html">Acessórios</a></li>
+                <li><a class="dropdown-item" href="api/roupas.html">Roupas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="formulario/index.formulario cadastro.html">Cadastro</a>
+            </li>
+            <button type="button" class="btn btn-black position-relative bg-black nav-item border-black"
+              style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="23" fill="currentColor"
+                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
+              </svg>
+              <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle">
+                <span class="visually-hidden"></span>
+              </span>
+            </button>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -70,35 +96,38 @@
           <img src="carrossel/roupa 2.jpg" class="d-block w-100" alt="roupa2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Seja a tendência. Vista a moda.</h5>
-          
+
           </div>
         </div>
         <div class="carousel-item bloco">
-          <img src="carrossel/calçado 1.jpg" class="d-block w-100" alt="calçado1">
+          <img src="carrossel/calcas masculinas de moletom termicas segunda pele e merino mobile-min.webp"
+            class="d-block w-100" alt="calçado1">
           <div class="carousel-caption d-none d-md-block">
             <h5>Do casual ao extraordinário, temos o seu visual perfeito</h5>
-            
+
           </div>
         </div>
         <div class="carousel-item bloco">
-          <img src="carrossel/calçado 2.jpg" class="d-block w-100" alt="calçado2">
+          <img
+            src="carrossel/01_5_calcas_que_vao_bombar_em_2023___tendencias_2023___calca___moda___blog_de_moda___julia_rolim-1074620.jpg"
+            class="d-block w-100" alt="calçado2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Crie momentos inesquecíveis com roupas inigualáveis</h5>
-            
+
           </div>
         </div>
         <div class="carousel-item bloco">
           <img src="carrossel/acessorio 1.jpg" class="d-block w-100" alt="acessorio1">
           <div class="carousel-caption d-none d-md-block">
             <h5>Capturando a essência da moda em cada peça</h5>
-            
+
           </div>
         </div>
         <div class="carousel-item bloco">
-          <img src="carrossel/acessorio 2.jpg" class="d-block w-100" alt="acessorio2">
+          <img src="carrossel/bracelete-prata-925-infinito.jpg" class="d-block w-100" alt="acessorio2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Revele sua autenticidade através da moda</h5>
-           
+
           </div>
         </div>
       </div>
@@ -118,19 +147,23 @@
     <section class="main">
       <h1>Promoções</h1>
     </section>
-    <main class="container-fluid">
+    <section class="container-fluid">
       <section class="container mt-3">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100">
-              <img src="cards/jordan1.webp" class="card-img-top" alt="..." >
+            <div class="card h-100 text-center">
+              <img src="cards/calca_cargo_tradicional_sarja_basic_preta_3310_1_74797dc68cb52404c8fa1ea18ea95b46.webp"
+                class="card-img-top" alt="...">
               <div class="card-body ">
-                <h5 class="card-title">Jordan 1 Retro High Lucky</h5>
-                <p class="card-text">Preço: <s>R$ 1.700</s></p>
-                <p class="card-text">Por: R$ 1.500</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal">
+                <h5 class="card-title">Calça cargo sarja basic preta</h5>
+                <p class="card-text">Preço: <s>R$ 1000</s></p>
+                <p class="card-text">Por: R$ 900</p>
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal">
                   info
                 </button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
               </div>
             </div>
             <div id="janelamodal" class="modal">
@@ -138,36 +171,43 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                    <h5 class="modal-title">Jordan 1 Retro High Lucky Green</h5>
+                    <h5 class="modal-title">Calça cargo sarja basic preta</h5>
                     <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                   </div>
                   <div class="modal-body">
-                    <p>Os tênis Jordan são fabricados com uma variedade de materiais, incluindo
-                      couro, camurça, malha e materiais sintéticos. A escolha do material pode
-                      variar de um modelo para outro e ao longo das diferentes edições
-                      lançadas. O couro é frequentemente usado na parte superior dos tênis
-                      Jordan, proporcionando durabilidade e um visual premium. Já a camurça e
-                      a malha podem ser empregadas para oferecer diferentes texturas e
-                      detalhes visuais. Os materiais sintéticos também são utilizados para
-                      proporcionar suporte e leveza aos tênis. Cada edição de tênis Jordan
-                      pode apresentar uma combinação única de materiais, visando conforto,
-                      desempenho esportivo e estilo.</p>
+                    <p>Apresentamos a nossa Calça Cargo Sarja Basic na clássica cor preta, uma peça essencial para o seu
+                      guarda-roupa. Esta calça combina estilo prático e versatilidade de forma impecável, sendo
+                      confeccionada com sarja de alta qualidade para proporcionar durabilidade e conforto. O design
+                      funcional do estilo cargo apresenta bolsos adicionais nos quadris e nas pernas, conferindo espaço
+                      extra para seus pertences essenciais com facilidade, além de um toque moderno ao seu visual. Com
+                      um corte cuidadosamente elaborado e uma mistura de materiais de qualidade, ela oferece um ajuste
+                      confortável que se adapta ao seu corpo, permitindo movimentação livre sem sacrificar o estilo. A
+                      cor preta atemporal torna esta calça adequada para várias ocasiões, seja combinada com uma
+                      camiseta casual para um visual descontraído ou com uma blusa elegante para uma noite especial.
+                      Pronta para uso diário, trabalho ou eventos casuais, sua versatilidade faz dela uma peça
+                      indispensável. Disponível em uma ampla gama de tamanhos, garantindo que todos encontrem o ajuste
+                      perfeito. Renove o seu estilo com a Calça Cargo Sarja Basic Preta e desfrute de uma combinação
+                      perfeita de praticidade e moda. Adquira a sua hoje mesmo e experimente a versatilidade e o
+                      conforto que esta calça oferece.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
-              <img src="cards/salto.jpg" class="card-img-top" alt="...">
+            <div class="card h-100 text-center">
+              <img src="cards/calca-feminina-pocket-capa.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Salto Alto Verde de Couro</h5>
+                <h5 class="card-title">Calça feminina pocket</h5>
                 <p class="card-text">Preço: <s>R$ 1.000</s></p>
                 <p class="card-text">Por: R$ 800</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal2">
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal2">
                   info
                 </button>
-                
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
+
               </div>
             </div>
             <div id="janelamodal2" class="modal">
@@ -175,16 +215,21 @@
                 <div class="modal-content">
 
                   <div class="modal-header">
-                    <h5 class="modal-title">Salto Alto Verde de Couro</h5>
+                    <h5 class="modal-title">Calça feminina pocket</h5>
                     <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                   </div>
                   <div class="modal-body">
-                    <p>O material de um salto alto de couro é notavelmente distintivo e oferece
-                      uma combinação de elegância, durabilidade e sofisticação. O couro é
-                      extraído da pele de animais, como bois, cabras ou cordeiros, e passa por
-                      um processo de tratamento para ser transformado em um material versátil
-                      e de alta qualidade. Aqui estão algumas características que definem o
-                      material de um salto alto de couro.
+                    <p>Descubra a perfeita fusão de estilo, conforto e funcionalidade em nossa Calça Feminina "Pocket".
+                      Feita com materiais de alta qualidade, como [mencionar o material específico, como jeans, algodão,
+                      ou outro], esta calça oferece durabilidade e sensação agradável na pele. Seu design elegante se
+                      adapta a várias ocasiões, desde looks casuais a mais sofisticados. O toque inovador está nos
+                      bolsos estrategicamente posicionados, combinando praticidade com moda contemporânea. Além disso, a
+                      adição de [mencionar a porcentagem de elastano ou spandex, se aplicável] proporciona um ajuste
+                      confortável e liberdade de movimento durante todo o dia. Disponível em uma ampla gama de cores e
+                      tamanhos para atender ao seu gosto pessoal, esta calça é versátil e pronta para elevar seu estilo
+                      em qualquer situação. Renove seu guarda-roupa com a Calça Feminina "Pocket" e desfrute de estilo,
+                      conforto e praticidade em uma única peça. Adquira a sua hoje e esteja pronta para qualquer
+                      ocasião.
                     </p>
                   </div>
                 </div>
@@ -192,16 +237,19 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 text-center">
               <img src="cards/camisa feminina.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Camisa Listrada Feminina</h5>
                 <p class="card-text">Preço: <s>R$ 200</s></p>
                 <p class="card-text">Por: R$ 180</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal3">
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal3">
                   info
                 </button>
-                
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
+
               </div>
             </div>
             <div id="janelamodal3" class="modal">
@@ -223,15 +271,18 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 text-center">
               <img src="cards/acessorios masculino.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Kit de Acessórios Masculino</h5>
                 <p class="card-text">Preço: <s>R$ 100</s></p>
                 <p class="card-text">Por: R$ 80</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal4">
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal4">
                   info
                 </button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
               </div>
             </div>
             <div id="janelamodal4" class="modal">
@@ -253,16 +304,19 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 text-center">
               <img src="cards/acessorios feminnio.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Kit de Acessórios Feminino</h5>
                 <p class="card-text">Preço: <s>R$ 100</s></p>
                 <p class="card-text">Por: R$ 80</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal5">
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal5">
                   info
                 </button>
-                
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
+
               </div>
             </div>
             <div id="janelamodal5" class="modal">
@@ -271,7 +325,7 @@
 
                   <div class="modal-header">
                     <h5 class="modal-title">Kit de Acessorios Feminino</h5>
-                  
+
                     <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
                   </div>
                   <div class="modal-body">
@@ -285,16 +339,19 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 text-center">
               <img src="cards/camisa.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Camisa de Algodão Masculina</h5>
                 <p class="card-text">Preço: <s>R$ 250</s></p>
                 <p class="card-text">Por: R$ 210</p>
-                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal" data-bs-target="#janelamodal6">
+                <button type="button" class="btn btn-dark bg-black" data-bs-toggle="modal"
+                  data-bs-target="#janelamodal6">
                   info
                 </button>
-                
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Add</button>
+                <button type="button" class="btn btn-black bg-black" style="color: white;">Com</button>
+
               </div>
             </div>
             <div id="janelamodal6" class="modal">
@@ -319,52 +376,52 @@
         </div>
       </section>
       <!--Depoimentos-->
-    <section class="main">
-      <h2>Depoimentos</h2>
+      <section class="main">
+        <h2>Depoimentos</h2>
+      </section>
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="comentarios/Mc pipokinha.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mc Pipokinha</h5>
+                <p class="card-text">O site é otimo agora eu posso humilhar professores com estilo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="comentarios/Mc kevin.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mc kevin</h5>
+                <p class="card-text">Gostei muito as roupas cairam super bem em mim</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="comentarios/naldo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Naldo</h5>
+                <p class="card-text">Vodka agua de coco</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="comentarios/blue pen.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Blue pen</h5>
+                <p class="card-text">Recomendo muito minha gente, esse site é bom demaize.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <section class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="comentarios/Mc pipokinha.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mc Pipokinha</h5>
-              <p class="card-text">O site é otimo agora eu posso humilhar professores com estilo.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="comentarios/Mc kevin.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mc kevin</h5>
-              <p class="card-text">Gostei muito as roupas cairam super bem em mim</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="comentarios/naldo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Naldo</h5>
-              <p class="card-text">Vodka agua de coco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="comentarios/blue pen.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Blue pen</h5>
-              <p class="card-text">Recomendo muito minha gente, esse site é bom demaize.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </main>
-    
-    
+
+
     <footer class="container-footer bg-black text-white py-3" style="margin-top: 5%;">
       <section class="row">
 
@@ -390,6 +447,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
   </script>
+  <script src="js/api.js"></script>
+
 </body>
 
 </html>
